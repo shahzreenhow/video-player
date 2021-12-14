@@ -90,6 +90,11 @@ button:hover {
     cursor: pointer;
 }
 
+.subvid:hover {
+    /* color: blue; */
+    transform: scale(1.05);
+}
+
 .description {
     width: 300px;
     height: 200px;
