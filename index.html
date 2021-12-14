@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Video web</title>
+        <link rel="stylesheet" href="vid.css">
+        <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+
+    </head>
+
+    <body>
+        <div id="outercontainer">
+            <div id="container">
+                <div class="mainvid">
+                        <video id="vid" src="./assets/Adele - Easy On Me (Official Lyric Video).mp4" controls width="500px" height="300px"></video>
+                </div>
+
+                <div class="nav">
+                    <button class="btn" onClick="volume(0.1)"><i class="fas fa-volume-up"></i></button>
+                    <button class="btnmain" onClick="playVid()"><i class="fas fa-play"></i></button>
+                    <button class="btnmain" onClick="pauseVid()"><i class="fas fa-pause"></i></button>
+                    <button class="btn" onClick="volume(-0.1)"><i class="fas fa-volume-down"></i></button>
+                </div>
+
+                <div class="choose">
+                    <h2>Select Your Video</h2>
+                </div>
+
+                <div class="subvid" onClick="changeVid('./assets/Bruno Mars, Anderson .Paak, Silk Sonic - Smokin Out The Window [Official Music Video].mp4')">
+                    <div class="img">
+                        <img src="./assets/bruno mars.png" alt="">
+                    </div>
+                    <div class="description" onClick="changedescription()">
+                        <p class="subdescription">Bruno Mars, Anderson .Paak, Silk Sonic - Smokin Out The Window [Official Music Video]</p>
+                    </div>
+                </div>
+
+                
+
+                <div class="subvid" onClick="changeVid('./assets/Coldplay X BTS - My Universe (Official Video).mp4')">
+                    <div class="img">
+                        <img src="./assets/coldplay.png" alt="">
+                    </div>
+                    <div class="description">
+                        <p>Coldplay X BTS - My Universe (Official Video)</p>
+                    </div>
+                </div>
+
+                <div class="subvid" onClick="changeVid('./assets/Adele - Easy On Me (Official Lyric Video).mp4')">
+                    <div class="img">
+                        <img src="./assets/adele.png" alt="">
+                    </div>
+                    <div class="description">
+                        <p>Adele - Easy On Me (Official Lyric Video)</p>
+                    </div>
+                </div>
+            </div>
+
+
+            <script src="./vid.js"></script>
+        </div>
+    </body>
+   
+</html>
